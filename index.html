@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document Intelligence</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+  <h1>📄 Document Intelligence</h1>
+
+  <!-- 🔐 Top Right -->
+  <div class="config">
+    <input type="text" id="endpoint" placeholder="Azure Endpoint">
+    <input type="text" id="apikey" placeholder="API Key">
+  </div>
+</header>
+
+<div class="container">
+
+  <h2>Upload Document</h2>
+
+  <!-- File Upload -->
+  <input type="file" id="fileInput">
+
+  <h3>OR</h3>
+
+  <!-- URL Input -->
+  <input type="text" id="urlInput" placeholder="Enter Document URL">
+
+  <button onclick="analyzeDocument()">Analyze</button>
+
+  <!-- Output -->
+  <div class="result" id="output">Result will appear here...</div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
